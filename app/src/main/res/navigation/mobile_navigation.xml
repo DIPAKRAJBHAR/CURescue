@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.project.curescue.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/notification"
+            app:popUpTo="@id/notification"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.project.curescue.ui.notificaton.NotificationServiceFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+
+
+    <fragment
+        android:id="@+id/helpline"
+        android:name="com.project.curescue.ui.helpline.HelplineFragment"
+        android:label="@string/helpline"
+        tools:layout="@layout/fragment_helpline" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.project.curescue.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.project.curescue.ui.about_us.AboutUsFragment"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>

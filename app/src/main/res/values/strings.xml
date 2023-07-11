@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CURescue</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="helpline">Helpline</string>
+    <string name="menu_gallery">Tips</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us <a href="https://www.cuidol.in/contact-us.php">https://www.cuidol.in/contact-us.php</a></string>
+
+</resources>

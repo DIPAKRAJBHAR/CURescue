@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.curescue.ui.notification.NotificationServiceFragment" >
+
+
+    <RelativeLayout
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textNum"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="SOS Will Be Sent To\n"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNum"
+            android:layout_gravity="top|center"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="116dp"
+                android:layout_height="63dp"
+                android:layout_margin="10dp"
+                android:onClick="startServiceV"
+                android:text="Start"
+                />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="116dp"
+                android:layout_height="63dp"
+                android:layout_below="@id/start"
+
+                android:layout_margin="10dp"
+                android:onClick="stopService"
+                android:text="Stop"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>
